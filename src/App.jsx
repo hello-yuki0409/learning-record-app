@@ -42,7 +42,14 @@ export function App() {
   const currentGoal = baseGoal + goalCount * plusGoal;
 
   return (
-    <>
+    <div
+      style={{
+        background: "#333",
+        color: "#fff",
+        minHeight: "100vh",
+        padding: "2em",
+      }}
+    >
       <LearningForm
         records={records}
         setRecords={setRecords}
@@ -61,6 +68,6 @@ export function App() {
         baseGoal={baseGoal}
       />
       <HistoryList history={history} />
-    </>
+    </div>
   );
 }
