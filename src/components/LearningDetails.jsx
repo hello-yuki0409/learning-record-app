@@ -2,7 +2,6 @@ export const LearningDetails = (props) => {
   const { records, time, error, totalStudyTime, currentGoal, baseGoal } = props;
   return (
     <div>
-      <h1>学習記録一覧</h1>
       <div>
         <p>入力されている学習内容: {records}</p>
         <p>入力されている時間: {time} 時間</p>
